@@ -1,0 +1,52 @@
+.wrapper {
+    width: 100%;
+    padding: 40px;
+
+    border-radius: 16px;
+    background: var(--06);
+    @media (max-width: 768px) {
+        padding: 28px;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 420px;
+    @media (max-width: 768px) {
+        gap: 20px;
+    }
+}
+
+.title {
+    padding-bottom: 15px;
+    margin-bottom: 24px;
+
+    font: var(--title);
+
+    border-bottom: 1px solid var(--04);
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+
+.buttonWrapper {
+    margin-top: 8px;
+
+    button {
+        width: 100%;
+    }
+    @media (max-width: 768px) {
+        margin-top: 4px;
+    }
+}
+
+.error {
+    font: var(--caption);
+    color: var(--accent);
+}
+
+.loader {
+    margin: 8px auto 0;
+}

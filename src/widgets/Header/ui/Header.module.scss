@@ -1,0 +1,52 @@
+.header {
+    background: var(--06);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 16px 15px;
+    @media (max-width: 768px) {
+        padding: 11px 16px;
+    }
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.links {
+    display: flex;
+    gap: 4px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    @media (max-width: 768px) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.name {
+    font: var(--text-2-medium);
+    color: var(--02)
+}

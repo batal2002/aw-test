@@ -1,0 +1,17 @@
+.button {
+    padding: 12px 42px;
+
+    color: var(--06);
+
+    border-radius: 50px;
+    background: var(--01);
+
+    cursor: pointer;
+    @media (min-width: 768.02px) {
+        &:hover {
+            color: var(--02);
+
+            background-color: var(--05);
+        }
+    }
+}

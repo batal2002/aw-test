@@ -1,0 +1,33 @@
+:root {
+    //colors
+    --01: #161616;
+    --02: #595959;
+    --03: #9C9C9C;
+    --04: #DADADA;
+    --05: #F4F4F4;
+    --06: #FDFDFD;
+    --accent: #22A0BC;
+    --gray-900: #333153;
+
+    //Typography
+    --title: 600 24px 'Manrope', sans-serif;
+    --headline: 600 20px 'Manrope', sans-serif;
+    --text-1-semibold: 600 18px 'Manrope', sans-serif;
+    --text-1-medium: 500 18px 'Manrope', sans-serif;
+    --text-2-semibold: 600 16px 'Manrope', sans-serif;
+    --text-2-medium: 500 16px 'Manrope', sans-serif;
+    --caption : 500 14px 'Manrope', sans-serif;
+
+    //
+    --navbar-height: 56px
+}
+
+.app.mobile {
+    //Typography on mobile
+    --headline: 600 18px 'Manrope', sans-serif;
+    --text-1-semibold: 600 16px 'Manrope', sans-serif;
+    --text-1-medium: 500 16px 'Manrope', sans-serif;
+    --text-2-semibold: 600 14px 'Manrope', sans-serif;
+    --text-2-medium: 500 14px 'Manrope', sans-serif;
+    --caption : 500 10px 'Manrope', sans-serif;
+}
