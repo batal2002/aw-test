@@ -6,7 +6,7 @@ import {Button} from "../../../shared/ui/Button/Button";
 import {useAppDispatch, useAppSelector} from "../../../shared/lib/redux";
 import {Loader} from "../../../shared/ui/Loader/Loader";
 import Modal from "../../../shared/ui/Modal/Modal";
-import {updateUser} from "../../../entities/User/model/services/updateUser";
+import {updateUser} from "../model/services/updateUser";
 
 interface FormInputs {
     name: string
@@ -18,7 +18,8 @@ interface FormInputs {
 }
 
 const ProfileForm = () => {
-    const {user, isUpdating, updateStatus, updatingError, isLoading} = useAppSelector(state => state.user)
+    const {user} = useAppSelector(state => state.user)
+    const {isUpdating, updateStatus, updatingError,} = useAppSelector(state => state.profileForm)
     const dispatch = useAppDispatch()
     const [openModal, setOpenModal] = useState<boolean>(false)
     const methods = useForm<FormInputs>({

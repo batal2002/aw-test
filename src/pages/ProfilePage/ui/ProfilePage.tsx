@@ -7,7 +7,9 @@ import {ProfileCard} from "../../../widgets/ProfileCard";
 import cls from './ProfilePage.module.scss'
 import {ProfileForm} from "../../../widgets/ProfileForm";
 import {Loader} from "../../../shared/ui/Loader/Loader";
-import {resetState} from "../../../entities/User/model/slice/UserSlice";
+import {resetUserError} from "../../../entities/User/model/slice/UserSlice";
+import {resetProfileFormState} from "../../../widgets/ProfileForm/model/slice/ProfileFormSlice";
+
 
 
 const ProfilePage = () => {
@@ -24,7 +26,10 @@ const ProfilePage = () => {
 
     useEffect(() => {
         return () => {
-            dispatch(resetState())
+            if (error) {
+                dispatch(resetUserError())
+            }
+            dispatch(resetProfileFormState())
         }
     }, [])
 

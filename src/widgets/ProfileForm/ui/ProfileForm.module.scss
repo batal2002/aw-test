@@ -34,19 +34,26 @@
 .buttonWrapper {
     margin-top: 8px;
 
-    button {
-        width: 100%;
-    }
     @media (max-width: 768px) {
         margin-top: 4px;
+        button {
+            width: 100%;
+        }
     }
 }
 
 .error {
+    position: absolute;
     font: var(--caption);
     color: var(--accent);
 }
 
 .loader {
-    margin: 8px auto 0;
+    display: flex;
+    justify-content: center;
+    max-width: 170px;
+    margin-top: 8px;
+    @media (max-width: 768px) {
+        max-width: none;
+    }
 }
