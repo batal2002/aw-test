@@ -3,7 +3,7 @@ import appReducer from '../../../model/slice/AppSlice'
 import {usersReducer} from "../../../../entities/Users";
 import {archiveUsersReducer} from "../../../../entities/ArchiveUsers";
 import {userReducer} from "../../../../entities/User";
-import profileFormReducer from "../../../../widgets/ProfileForm/model/slice/ProfileFormSlice";
+import profileFormReducer from "../../../../entities/ProfileForm/model/slice/ProfileFormSlice";
 
 const rootReducer = combineReducers({
     app: appReducer,

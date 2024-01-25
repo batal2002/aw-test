@@ -17,3 +17,9 @@
     align-items: center;
     height: 360px;
 }
+
+.error {
+    display: block;
+    font: var(--headline);
+    color: var(--accent);
+}

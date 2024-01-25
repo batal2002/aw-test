@@ -7,6 +7,7 @@ import {useAppDispatch, useAppSelector} from "../../../shared/lib/redux";
 import {Loader} from "../../../shared/ui/Loader/Loader";
 import Modal from "../../../shared/ui/Modal/Modal";
 import {updateUser} from "../model/services/updateUser";
+import {resetProfileFormState} from "../model/slice/ProfileFormSlice";
 
 interface FormInputs {
     name: string
@@ -46,6 +47,11 @@ const ProfileForm = () => {
             }))
         }
     }
+    useEffect(() => {
+        return () => {
+            dispatch(resetProfileFormState())
+        }
+    }, [])
 
     useEffect(() => {
         if (updateStatus && !isUpdating && 200 <= updateStatus && updateStatus <= 299) {

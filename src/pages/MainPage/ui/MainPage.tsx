@@ -11,8 +11,8 @@ const MainPage = () => {
     return (
         <>
             <h3 className={cls.title}>Активные</h3>
-            {error && <span>{error}</span>}
-            {users.length === 0 && !error && !isLoading && <span>Нет активных пользователей</span>}
+            {error && <span className={cls.error}>{error}</span>}
+            {users.length === 0 && !error && !isLoading && <span className={cls.error}>Нет активных пользователей</span>}
             {isLoading ?
                 <div className={cls.loader}>
                     <Loader size={70}/>

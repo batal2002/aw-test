@@ -15,3 +15,10 @@
     justify-content: center;
     align-items: center;
 }
+
+.error {
+    display: block;
+    margin-top: 10px;
+    font: var(--headline);
+    color: var(--accent);
+}
